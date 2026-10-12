@@ -1,0 +1,11 @@
+#构建产物 —— 都不该进仓库
+.build/ build/ *.dmg
+
+#本地签名身份（证书 / 私钥 / 指纹）—— 绝不入库
+.photosift-signing/ identity.sha1 *.p12 *.pem *.key
+
+#运行期产物
+*.log
+
+#macOS
+.DS_Store
