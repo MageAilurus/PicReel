@@ -1,8 +1,7 @@
-# PicReel
-A macOS/Android app lets you organize your photo with one finger.
+<h1 align="center">PicReel</h1>
 
 <p align="center">
-  <img src="assets/logo.png" width="120" alt="MuseNote Logo">
+A macOS/Android app lets you organize your photo with one finger.
 </p>
 
 ## Introduction
