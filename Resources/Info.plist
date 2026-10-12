@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>zh_CN</string>
+	<key>CFBundleExecutable</key>
+	<string>PicReel</string>
+	<!--
+	  CFBundleIdentifier is deliberately FROZEN and does not follow the app name.
+	  macOS stores the Photos permission against the code's designated
+	  requirement, which embeds this identifier:
+	     designated => identifier "com.photosift.app" and certificate leaf = H"..."
+	  Renaming it would invalidate the user's existing permission grant and force
+	  another trip to System Settings. Treat it as an opaque identity, not a name.
+	-->
+	<key>CFBundleIdentifier</key>
+	<string>com.photosift.app</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>PicReel</string>
+	<key>CFBundleDisplayName</key>
+	<string>PicReel</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.9</string>
+	<key>CFBundleVersion</key>
+	<string>6</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSSupportsAutomaticGraphicsSwitching</key>
+	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>PicReel 需要访问你的照片图库：读取照片以便逐张预览，把照片归入你指定的专辑，并删除你明确标记并确认的照片。缺了这个说明，macOS 不会弹出授权框。</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>PicReel 需要向你的照片图库写入：创建专辑、把照片归入专辑。</string>
+</dict>
+</plist>
